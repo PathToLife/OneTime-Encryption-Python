@@ -6,8 +6,9 @@ class OneTimeEncryption:
         print("Created")
 
     def makeOneTimePad(self,fileName):
-        file_open = open(fileName + datetime.now().strftime("-%d-%m-%y") + ".txt","w")
-        file_open.write("test")
+        file_open = open(fileName + datetime.now().strftime("-%d-%m-%y.onetime") + ".txt","w")
+        
+        file_open.write()
         file_open.close()
 
 encrypt1 = OneTimeEncryption()
